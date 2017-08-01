@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_136731_test_faul.GetDepartmentName</api_name>
+        <client_callable>true</client_callable>
+        <description>ユーザー情報の所属名を返すためのサーバースクリプト</description>
+        <name>GetDepartmentName</name>
+        <script><![CDATA[var GetDepartmentName = Class.create();
+GetDepartmentName.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getDepart: function() {
+		var userRecode = new GlideRecord("sys_user");
+		userRecode.get(this.getParameter('sysparm_userID'));
+		var departID = userRecode.department;
+		var departRecode = new GlideRecord("cmn_department");
+		departRecode.get(departID);
+		return departRecode.name;
+	},
+
+	type: 'GetDepartmentName'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-31 00:52:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>da6a83d10f908300fd4e758ce1050ead</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>GetDepartmentName</sys_name>
+        <sys_package display_value="Test Fault Management" source="x_136731_test_faul">6dd5e3cc0f100300fd4e758ce1050e66</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Test Fault Management">6dd5e3cc0f100300fd4e758ce1050e66</sys_scope>
+        <sys_update_name>sys_script_include_da6a83d10f908300fd4e758ce1050ead</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-31 02:00:55</sys_updated_on>
+    </sys_script_include>
+</record_update>

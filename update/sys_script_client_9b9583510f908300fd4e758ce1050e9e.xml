@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>新規作成時、【登録】の登録日と登録者を自動挿入する</description>
+        <field>sys_created_on</field>
+        <global>true</global>
+        <messages/>
+        <name>onLoad for 新規作成</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	// 新規作成のときのみ動作する
+	if(g_form.isNewRecord()){
+		// JSによる時間の取得、ServiceNow用に情報の成型
+		var DD = new Date();
+		var DS = RetDate(DD);
+		// アクセスしているUserID(32桁)の取得
+		var UI = g_user.userID;
+		// フォームへ情報の書込み
+		g_form.setValue('u_regist_date', DS);
+		g_form.setValue('u_regist_name', UI);
+		g_form.setReadOnly('u_regist_date', true);
+		g_form.setReadOnly('u_regist_name', true);
+
+		// ユーザー情報に登録されている、所属の情報を得る 
+		 var getDepartment = new GlideAjax('GetDepartmentName');
+		getDepartment.addParam('sysparm_name','getDepart');
+		getDepartment.addParam('sysparm_userID', UI);
+		getDepartment.getXML(populateDepartmentField);
+
+	}
+}
+function RetDate(DD){
+	var retdate = DD.getFullYear();
+	retdate += "-" + (DD.getMonth() > 9 ? (DD.getMonth() + 1) : "0" + (DD.getMonth() + 1));
+	retdate += "-" + (DD.getDate() > 10 ? DD.getDate() : "0" + DD.getDate());
+	return retdate;
+}
+// When the response is back from the server
+function populateDepartmentField(response){
+	var departName = response.responseXML.documentElement.getAttribute("answer");
+	// 所属情報はここで書込み
+	g_form.setValue('u_regist_department', departName);
+	g_form.setReadOnly('u_regist_department', true);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-31 00:25:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9b9583510f908300fd4e758ce1050e9e</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>onLoad for 新規作成</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Test Fault Management" source="x_136731_test_faul">6dd5e3cc0f100300fd4e758ce1050e66</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Test Fault Management">6dd5e3cc0f100300fd4e758ce1050e66</sys_scope>
+        <sys_update_name>sys_script_client_9b9583510f908300fd4e758ce1050e9e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-31 08:30:10</sys_updated_on>
+        <table>x_136731_test_faul_management</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="抽出漏れ原因" max_length="40" name="x_136731_test_faul_cause_extraction_failure" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="抽出漏れ原因" mandatory="true" max_length="100" name="u_cause_extraction" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="水平展開の要否" max_length="40" name="x_136731_test_faul_necessity_horizontal_deployment" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="水平展開の要否" mandatory="true" max_length="400" name="u_necessity" type="string"/>
+    </element>
+</database>

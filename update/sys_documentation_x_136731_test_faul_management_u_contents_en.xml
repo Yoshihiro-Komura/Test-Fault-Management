@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_contents" label="内容" language="en" table="x_136731_test_faul_management">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_contents</element>
+            <help/>
+            <hint/>
+            <label>内容</label>
+            <language>en</language>
+            <name>x_136731_test_faul_management</name>
+            <plural>内容s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-07-28 00:53:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a7e3ff100f580300fd4e758ce1050e09</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>内容</sys_name>
+            <sys_package display_value="Test Fault Management" source="x_136731_test_faul">6dd5e3cc0f100300fd4e758ce1050e66</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Test Fault Management">6dd5e3cc0f100300fd4e758ce1050e66</sys_scope>
+            <sys_update_name>sys_documentation_x_136731_test_faul_management_u_contents_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-07-28 00:54:02</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

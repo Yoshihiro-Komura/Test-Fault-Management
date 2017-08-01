@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="抽出すべき工程" max_length="40" name="x_136731_test_faul_step_extracted" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="抽出すべき工程" mandatory="true" max_length="100" name="u_step_extracted" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="担当チーム" max_length="40" name="x_136731_test_faul_my_team" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="チーム名" mandatory="true" max_length="100" name="u_team_name" type="string"/>
+    </element>
+</database>
