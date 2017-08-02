@@ -4,11 +4,11 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 05:47:12</sys_created_on>
-            <sys_id>4fd3dca50f148300fd4e758ce1050e0f</sys_id>
+            <sys_created_on>2017-08-01 04:48:58</sys_created_on>
+            <sys_id>b71091710f900300fd4e758ce1050eb1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 05:47:12</sys_updated_on>
+            <sys_updated_on>2017-08-01 04:48:58</sys_updated_on>
             <text>テスト障害報告書
 個人情報保護の観点から、本データベースへの個人情報の登録は禁じます。
 ※業務上やむを得ない理由で登録しなければならない場合については、ヘルプを参照のこと。</text>
@@ -18,69 +18,97 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 05:47:12</sys_created_on>
-            <sys_id>03d3dca50f148300fd4e758ce1050e10</sys_id>
+            <sys_created_on>2017-08-01 04:48:58</sys_created_on>
+            <sys_id>7b1091710f900300fd4e758ce1050eb1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d3c76b400f900300fd4e758ce1050ee8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 05:47:12</sys_updated_on>
+            <sys_updated_on>2017-08-01 04:48:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>4fd3dca50f148300fd4e758ce1050e0f</element>
+            <element>b71091710f900300fd4e758ce1050eb1</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 05:47:12</sys_created_on>
-            <sys_id>83d3dca50f148300fd4e758ce1050e10</sys_id>
+            <sys_created_on>2017-08-01 04:48:58</sys_created_on>
+            <sys_id>fb1091710f900300fd4e758ce1050eb1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d3c76b400f900300fd4e758ce1050ee8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 05:47:12</sys_updated_on>
+            <sys_updated_on>2017-08-01 04:48:58</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
+            <element>u_edit_mode</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 05:47:12</sys_created_on>
-            <sys_id>07d3dca50f148300fd4e758ce1050e10</sys_id>
+            <sys_created_on>2017-08-01 04:48:58</sys_created_on>
+            <sys_id>7f1091710f900300fd4e758ce1050eb1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d3c76b400f900300fd4e758ce1050ee8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 05:47:12</sys_updated_on>
+            <sys_updated_on>2017-08-01 04:48:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-08-01 04:48:58</sys_created_on>
+            <sys_id>ff1091710f900300fd4e758ce1050eb1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d3c76b400f900300fd4e758ce1050ee8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-08-01 04:48:58</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_status</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 05:47:12</sys_created_on>
-            <sys_id>87d3dca50f148300fd4e758ce1050e10</sys_id>
+            <sys_created_on>2017-08-01 04:48:58</sys_created_on>
+            <sys_id>731091710f900300fd4e758ce1050eb2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d3c76b400f900300fd4e758ce1050ee8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 05:47:12</sys_updated_on>
+            <sys_updated_on>2017-08-01 04:48:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_sub_status</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 05:47:12</sys_created_on>
-            <sys_id>0bd3dca50f148300fd4e758ce1050e10</sys_id>
+            <sys_created_on>2017-08-01 04:48:58</sys_created_on>
+            <sys_id>f31091710f900300fd4e758ce1050eb2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d3c76b400f900300fd4e758ce1050ee8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 05:47:12</sys_updated_on>
+            <sys_updated_on>2017-08-01 04:48:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_viewer</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-08-01 04:48:58</sys_created_on>
+            <sys_id>771091710f900300fd4e758ce1050eb2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d3c76b400f900300fd4e758ce1050ee8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-08-01 04:48:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
