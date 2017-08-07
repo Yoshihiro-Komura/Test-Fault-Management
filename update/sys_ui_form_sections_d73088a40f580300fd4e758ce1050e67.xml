@@ -22,12 +22,12 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>0a2851ec0fd80300fd4e758ce1050e2a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_136731_test_faul_management" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d73088a40f580300fd4e758ce1050e67</sys_ui_form>
             <sys_ui_section caption="登録" display_value="登録" name="x_136731_test_faul_management" sys_domain="global" view="Default view">4e2851ec0fd80300fd4e758ce1050e28</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 08:11:40</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:49:29</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>2</position>
@@ -36,12 +36,12 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e658d1ec0fd80300fd4e758ce1050e29</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_136731_test_faul_management" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d73088a40f580300fd4e758ce1050e67</sys_ui_form>
             <sys_ui_section caption="報告" display_value="報告" name="x_136731_test_faul_management" sys_domain="global" view="Default view">6e58d1ec0fd80300fd4e758ce1050e26</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 08:12:31</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:49:29</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>3</position>
@@ -50,12 +50,12 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>737815ec0fd80300fd4e758ce1050ecc</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_136731_test_faul_management" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d73088a40f580300fd4e758ce1050e67</sys_ui_form>
             <sys_ui_section caption="受付" display_value="受付" name="x_136731_test_faul_management" sys_domain="global" view="Default view">337891ec0fd80300fd4e758ce1050e8d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 08:13:09</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:49:29</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>4</position>
@@ -64,12 +64,12 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>729895ec0fd80300fd4e758ce1050e14</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_136731_test_faul_management" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d73088a40f580300fd4e758ce1050e67</sys_ui_form>
             <sys_ui_section caption="対応" display_value="対応" name="x_136731_test_faul_management" sys_domain="global" view="Default view">7e9895ec0fd80300fd4e758ce1050e10</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 08:13:38</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:49:29</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>5</position>
@@ -78,12 +78,12 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c51959ec0fd80300fd4e758ce1050e3a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_136731_test_faul_management" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d73088a40f580300fd4e758ce1050e67</sys_ui_form>
             <sys_ui_section caption="完了" display_value="完了" name="x_136731_test_faul_management" sys_domain="global" view="Default view">8d1959ec0fd80300fd4e758ce1050e36</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 08:15:42</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:49:29</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>6</position>
@@ -92,12 +92,12 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>272959ec0fd80300fd4e758ce1050e4b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_136731_test_faul_management" name="x_136731_test_faul_management" sys_domain="global" view="Default view">d73088a40f580300fd4e758ce1050e67</sys_ui_form>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 08:16:09</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:49:29</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_136731_test_faul_management</name>

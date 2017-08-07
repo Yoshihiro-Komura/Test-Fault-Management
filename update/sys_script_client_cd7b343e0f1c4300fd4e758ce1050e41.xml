@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>ステータスによるReadonly指定</description>
+        <field>sys_created_on</field>
+        <global>true</global>
+        <messages/>
+        <name>onLoad for Status to Readonly</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Type appropriate comment here, and begin script below
+	var valStatus = g_form.getValue('u_status');
+	var valSubSta = g_form.getValue('u_sub_status');
+	// 時間の取得と成型
+	var DD = new Date();
+	var DS = RetDate(DD);
+	// アクセスしているUserID(32桁)の取得
+	var UI = g_user.userID;
+
+	var getDepartment = new GlideAjax('GetDepartmentName');
+
+	if(valStatus != 0 && valStatus != 1){
+		g_form.setReadOnly('u_case', true);
+		g_form.setReadOnly('u_test_process', true);
+		g_form.setReadOnly('u_importance', true);
+		g_form.setReadOnly('u_issue_number', true);
+		g_form.setReadOnly('u_request_response_date', true);
+		g_form.setReadOnly('u_ua_to', true);
+		g_form.setReadOnly('u_ua_cc', true);
+		g_form.setReadOnly('u_subject', true);
+		g_form.setReadOnly('u_contents', true);
+		g_form.setReadOnly('u_attachment', true);
+	}
+	if(valStatus != 2) {
+		g_form.setReadOnly('u_responsible_official', true);
+		g_form.setReadOnly('u_comment', true);
+	}
+	if(valStatus != 11) {
+		g_form.setReadOnly('u_my_team', true);
+		g_form.setReadOnly('u_sys_person', true);
+		g_form.setReadOnly('u_comment2', true);
+	}
+	if(valStatus != 12) {
+		g_form.setReadOnly('u_cooperating_company', true);
+		g_form.setReadOnly('u_cause_type', true);
+		g_form.setReadOnly('u_completion_date', true);
+		g_form.setReadOnly('u_cause', true);
+		g_form.setReadOnly('u_embedding_process', true);
+		g_form.setReadOnly('u_cause_extraction', true);
+		g_form.setReadOnly('u_step_extracted', true);
+		g_form.setReadOnly('u_business_impact_destination', true);
+		g_form.setReadOnly('u_business_impact_contents', true);
+		g_form.setReadOnly('u_business_importance', true);
+		g_form.setReadOnly('u_impact_range', true);
+		g_form.setReadOnly('u_correspondence', true);
+		g_form.setReadOnly('u_attachment2', true);
+		g_form.setReadOnly('u_necessity_deployment', true);
+		g_form.setReadOnly('u_confirmstion_result', true);
+		g_form.setReadOnly('u_completion_deployment', true);
+		g_form.setReadOnly('u_corresponding_record', true);
+	}
+	if(valStatus != 13) {
+		g_form.setReadOnly('u_correspondence_completion_date', true);
+		g_form.setReadOnly('u_unloading', true);
+		g_form.setReadOnly('u_comment3', true);
+		g_form.setReadOnly('u_reversed_history', true);
+	}
+	if(valStatus != 14) {
+		g_form.setReadOnly('u_notices', true);
+		g_form.setReadOnly('u_knowledge_object', true);
+	}
+
+	
+	if(valStatus == 0 || valStatus == 1){
+		g_tabs2Sections.setActive(0);
+		// フォームへ情報の書込み
+		g_form.setValue('u_regist_date', DS);
+		g_form.setValue('u_regist_name', UI);
+
+		// ユーザー情報に登録されている、所属の情報を得る 
+		getDepartment.addParam('sysparm_name','getDepart');
+		getDepartment.addParam('sysparm_userID', UI);
+		getDepartment.getXML(populateDepartmentField00);
+	} else if(valStatus == 2) {
+		g_tabs2Sections.setActive(1);
+		// フィールドに挿入
+		g_form.setValue('u_reporting_date', DS);
+		g_form.setValue('u_reporting_name', UI);
+
+		// ユーザー情報に登録されている、所属の情報を得る 
+		getDepartment.addParam('sysparm_name','getDepart');
+		getDepartment.addParam('sysparm_userID', UI);
+		getDepartment.getXML(populateDepartmentField02);
+	} else if(valStatus == 11) {
+		g_tabs2Sections.setActive(2);
+		// フィールドに挿入
+		g_form.setValue('u_reception_date', DS);
+		g_form.setValue('u_reception_name', UI);
+
+		// ユーザー情報に登録されている、所属の情報を得る 
+		getDepartment.addParam('sysparm_name','getDepart');
+		getDepartment.addParam('sysparm_userID', UI);
+		getDepartment.getXML(populateDepartmentField11);
+	} else if(valStatus == 12) {
+		g_tabs2Sections.setActive(3);
+		// フィールドに挿入
+		g_form.setValue('u_answer_date', DS);
+		g_form.setValue('u_person_charge', UI);
+	} else if(valStatus == 13) {
+		g_tabs2Sections.setActive(4);
+		// フィールドに挿入
+		g_form.setValue('u_completion_report_date', DS);
+		g_form.setValue('u_completion_reporter', UI);
+	} else if(valStatus == 14) {
+		g_tabs2Sections.setActive(5);
+		// フィールドに挿入
+		g_form.setValue('u_approval_date', DS);
+		g_form.setValue('u_authorizer', UI);
+	}
+}
+function RetDate(DD){
+	var retdate = DD.getFullYear();
+	retdate += "-" + (DD.getMonth() > 9 ? (DD.getMonth() + 1) : "0" + (DD.getMonth() + 1));
+	retdate += "-" + (DD.getDate() > 10 ? DD.getDate() : "0" + DD.getDate());
+	return retdate;
+}
+function populateDepartmentField00(response){
+	var departName = response.responseXML.documentElement.getAttribute("answer");
+	// 所属情報はここで書込み
+	g_form.setValue('u_regist_department', departName);
+}
+function populateDepartmentField02(response){
+	var departName = response.responseXML.documentElement.getAttribute("answer");
+	// 所属情報はここで書込み
+	g_form.setValue('u_reporting_department', departName);
+}
+function populateDepartmentField11(response){
+	var departName = response.responseXML.documentElement.getAttribute("answer");
+	// 所属情報はここで書込み
+	g_form.setValue('u_reception_department', departName);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-04 05:57:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd7b343e0f1c4300fd4e758ce1050e41</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>onLoad for Status to Readonly</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Test Fault Management" source="x_136731_test_faul">6dd5e3cc0f100300fd4e758ce1050e66</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Test Fault Management">6dd5e3cc0f100300fd4e758ce1050e66</sys_scope>
+        <sys_update_name>sys_script_client_cd7b343e0f1c4300fd4e758ce1050e41</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-07 03:33:12</sys_updated_on>
+        <table>x_136731_test_faul_management</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

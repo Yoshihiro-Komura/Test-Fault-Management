@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>Button for 保存</action_name>
-        <active>true</active>
+        <active>false</active>
         <client>false</client>
         <comments>文章の保存</comments>
         <condition/>
@@ -22,7 +22,7 @@
         <list_style/>
         <name>保存</name>
         <onclick/>
-        <order>100</order>
+        <order>10</order>
         <script><![CDATA[// 現在の文章がデータベースに歩かないかをチェックして保存方法を変更する
 if(current.isNewRecord()){
 	// 新規保存
@@ -42,7 +42,7 @@ if(current.isNewRecord()){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8ab978290f548300fd4e758ce1050e88</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>保存</sys_name>
         <sys_overrides/>
         <sys_package display_value="Test Fault Management" source="x_136731_test_faul">6dd5e3cc0f100300fd4e758ce1050e66</sys_package>
@@ -51,7 +51,7 @@ if(current.isNewRecord()){
         <sys_scope display_value="Test Fault Management">6dd5e3cc0f100300fd4e758ce1050e66</sys_scope>
         <sys_update_name>sys_ui_action_8ab978290f548300fd4e758ce1050e88</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-02 00:19:45</sys_updated_on>
+        <sys_updated_on>2017-08-04 02:34:04</sys_updated_on>
         <table>x_136731_test_faul_management</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

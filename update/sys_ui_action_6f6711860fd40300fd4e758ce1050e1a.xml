@@ -22,8 +22,44 @@
         <list_style/>
         <name>差し戻し</name>
         <onclick/>
-        <order>100</order>
-        <script><![CDATA[current.u_status = 11;
+        <order>50</order>
+        <script><![CDATA[// 新規用の配列変数を用意
+var hisArr = [];
+// 現在のアクセスしているユーザー名を取得
+var ourUser = gs.getUser();
+var userName = ourUser.getDisplayName();
+// 現在の日付を取得
+var valDate = current.u_completion_report_date;
+// 理由の取得
+var valReason = current.u_reason_return;
+// 担当者変更履歴の抽出
+var history = current.u_reversed_history + '';
+if(history != "") {
+	hisArr = history.split('</table>');
+}
+// 履歴はあるか？
+if(history.length > 0){
+	// 履歴がある
+	hisArr.splice(1, 0, '<tr><td>' + valDate + '</td><td>' + userName + '</td><td>' + valReason + '</td></tr>');
+	hisArr[2] ="</table>";
+} else {
+	// 履歴がない
+	hisArr.push("<table width=\"100%\">");
+	hisArr.push("<tr><th width=\"20%\">日付</th><th width=\"30%\">担当者</th><th width=\"50%\">変更理由</th></tr>");
+	hisArr.push('<tr><td>' + valDate + '</td><td>' + userName + '</td><td>' + valReason + '</td></tr>');
+	hisArr.push('</table>');
+}
+
+var valHtml = '';
+for(ii = 0; ii < hisArr.length; ii++){
+	valHtml += hisArr[ii];
+}
+
+current.u_reversed_history = valHtml;
+
+current.u_status = 11;
+current.u_reason_return = "";
+
 current.update();]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -36,7 +72,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6f6711860fd40300fd4e758ce1050e1a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>差し戻し</sys_name>
         <sys_overrides/>
         <sys_package display_value="Test Fault Management" source="x_136731_test_faul">6dd5e3cc0f100300fd4e758ce1050e66</sys_package>
@@ -45,7 +81,7 @@ current.update();]]></script>
         <sys_scope display_value="Test Fault Management">6dd5e3cc0f100300fd4e758ce1050e66</sys_scope>
         <sys_update_name>sys_ui_action_6f6711860fd40300fd4e758ce1050e1a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-02 00:22:01</sys_updated_on>
+        <sys_updated_on>2017-08-07 02:38:28</sys_updated_on>
         <table>x_136731_test_faul_management</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

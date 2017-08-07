@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>sys_created_on</field>
+        <global>true</global>
+        <messages/>
+        <name>onSubmit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	//Type appropriate comment here, and begin script below
+	// 共通で使用する変数の用意
+	var valMsg = "";
+	var valStatus = g_form.getValue('u_status');
+	var valSubSta = g_form.getValue('u_sub_status');
+	var val_1,val_2,val_3;
+	var setStatus;
+	var hisArr = [];
+	var valName = g_form.getValue('u_val_name');
+	var history;
+	var valReason;
+	var getEM = g_form.getBooleanValue('u_edit_mode');
+
+	if(getEM == 'true' || getEM == true){
+		if(valStatus <= 1){
+
+			val_1 = g_form.getValue('u_case');
+			val_2 = g_form.getValue('u_request_response_date');
+			val_3 = g_form.getValue('u_ua_to');
+
+			if(val_1 == ""){
+				valMsg += "案件\n";
+			}
+			if(val_2 == ""){
+				valMsg += "希望対応日\n";
+			}
+			if(val_3 == ""){
+				valMsg += "ＵＡ (Ｔｏ)\n";
+			}
+
+		} else if(valStatus == 2){
+			if(valSubSta == 0){
+				val_1 = g_form.getValue('u_responsible_official');
+				if(val_1 == ""){
+					valMsg += "回答責任者\n";
+				}
+			}
+		} else if(valStatus == 11){
+			val_1 = g_form.getValue('u_my_team');
+			val_2 = g_form.getValue('u_sys_person');
+			if(val_1 == ""){
+				valMsg += "担当チーム\n";
+			}
+			if(val_2 == ""){
+				valMsg += "システム担当者\n";
+			}
+		} else if(valStatus == 12){
+			if(valSubSta == 0){
+				val_1 = g_form.getValue('u_responsible_official');
+				if(val_1 == ""){
+					valMsg += "回答責任者\n";
+				}
+			} else {
+				val_1 = g_form.getValue('u_reason_change');
+				if(val_1 == ""){
+					valMsg += "担当者変更理由\n";
+				}
+			}
+		} else if(valStatus == 13){
+			val_1 = g_form.getValue('u_correspondence_completion_date');
+			if(val_1 == ""){
+				valMsg += "対応完了日\n";
+			}
+		} else if(valStatus == 14){
+			if(valSubSta != 0){
+				val_1 = g_form.getValue('u_reason_return');
+				if(val_1 == ""){
+					valMsg += "差し戻し理由\n";
+				}
+			}
+		}
+	
+
+		// 判定
+		if(valMsg != ""){
+			valMsg = "以下の項目は必須入力です。\n" + valMsg;
+			alert(valMsg);
+			return false;
+		}
+		// g_form.setValue('u_edit_mode', false);
+	}
+
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-04 02:51:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fd21507a0fd84300fd4e758ce1050e35</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>onSubmit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Test Fault Management" source="x_136731_test_faul">6dd5e3cc0f100300fd4e758ce1050e66</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Test Fault Management">6dd5e3cc0f100300fd4e758ce1050e66</sys_scope>
+        <sys_update_name>sys_script_client_fd21507a0fd84300fd4e758ce1050e35</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-07 03:33:45</sys_updated_on>
+        <table>x_136731_test_faul_management</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

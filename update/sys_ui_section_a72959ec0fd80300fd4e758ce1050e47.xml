@@ -4,11 +4,11 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>8c2091710f900300fd4e758ce1050eda</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>ed326ba30f500300fd4e758ce1050ecc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <text>ナレッジ管理の観点から、保存不要の文章については、一定期間経過後に削除することを検討しています。(削除する場合は別途周知します。)今後もナレッジ資産として保存が必要な文章は、チェックボックスをONにしてください。</text>
             <type display_value="non-style text">a40bf7880f900300fd4e758ce1050e8d</type>
         </sys_ui_annotation>
@@ -16,13 +16,13 @@
             <element>u_approval_date</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>402091710f900300fd4e758ce1050edb</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>a1326ba30f500300fd4e758ce1050ecd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -30,13 +30,13 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>c02091710f900300fd4e758ce1050edb</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>25326ba30f500300fd4e758ce1050ecd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -44,13 +44,13 @@
             <element>u_authorizer</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>442091710f900300fd4e758ce1050edb</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>a5326ba30f500300fd4e758ce1050ecd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -58,97 +58,111 @@
             <element>.end_split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>c42091710f900300fd4e758ce1050edb</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>29326ba30f500300fd4e758ce1050ecd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_notices</element>
+            <element>u_reason_return</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>482091710f900300fd4e758ce1050edb</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>a9326ba30f500300fd4e758ce1050ecd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_notices</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>2d326ba30f500300fd4e758ce1050ecd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>c82091710f900300fd4e758ce1050edb</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>ad326ba30f500300fd4e758ce1050ecd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_knowledge_object</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>4c2091710f900300fd4e758ce1050edb</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>21326ba30f500300fd4e758ce1050ece</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>cc2091710f900300fd4e758ce1050edb</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>a1326ba30f500300fd4e758ce1050ece</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>402091710f900300fd4e758ce1050edc</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>25326ba30f500300fd4e758ce1050ece</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>8c2091710f900300fd4e758ce1050eda</element>
-            <position>9</position>
+            <element>ed326ba30f500300fd4e758ce1050ecc</element>
+            <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-08-01 04:48:59</sys_created_on>
-            <sys_id>c02091710f900300fd4e758ce1050edc</sys_id>
+            <sys_created_on>2017-08-07 01:56:36</sys_created_on>
+            <sys_id>a5326ba30f500300fd4e758ce1050ece</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="承認" display_value="承認" name="x_136731_test_faul_management" sys_domain="global" view="Default view">a72959ec0fd80300fd4e758ce1050e47</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-08-01 04:48:59</sys_updated_on>
+            <sys_updated_on>2017-08-07 01:56:36</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
